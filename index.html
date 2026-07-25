@@ -6,144 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-      margin: 0;
       font-family: "Georgia", serif;
       background-color: #f5f0e8;
       color: #3b2b1f;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
-
     header {
       background-color: #7b5b3b;
       color: #fdf7ee;
-      padding: 25px 15px;
+      padding: 20px;
       text-align: center;
     }
-
     nav {
       background-color: #5f452f;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 5px 0;
+      gap: 20px;
+      padding: 10px;
     }
-
     nav a {
-      padding: 10px 12px;
       color: #fdf7ee;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-weight: bold;
     }
-
-    main {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
+    nav a:hover {
+      text-decoration: underline;
     }
-
     section {
-      margin-bottom: 30px;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
     }
-
     h2 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
+      color: #5f452f;
     }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    @media (min-width: 600px) {
-      .gallery {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
     footer {
       background-color: #7b5b3b;
       color: #fdf7ee;
       text-align: center;
       padding: 15px;
-      font-size: 0.85rem;
+      margin-top: 30px;
+    }
+    #qr img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: 20px auto;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>Rincón Incas</h1>
-    <p>Café de barrio con historia, sabor y tradición.</p>
+    <h1>Bienvenidos al Rincón Incas</h1>
+    <p>Un espacio para disfrutar café, medialunas, tostados y picadas</p>
   </header>
 
   <nav>
-    <a href="#bienvenidos">Inicio</a>
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
     <a href="#sobre-nosotros">Sobre nosotros</a>
-    <a href="#menu">Menú</a>
     <a href="#galeria">Galería</a>
     <a href="#info">Ubicación</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <main>
-    <section id="bienvenidos">
-      <h2>Bienvenidos</h2>
-      <p>
-        <strong>Rincón Incas</strong> es un espacio tranquilo y clásico, atendido por dos adultos mayores que mantienen viva la esencia de un café de barrio. Un lugar donde el tiempo pasa más lento y cada taza tiene historia.
-      </p>
-    </section>
+  <section id="sobre-nosotros">
+    <h2>Sobre nosotros</h2>
+    <p>En Rincón Incas ofrecemos un ambiente cálido y familiar, con productos frescos y de calidad.</p>
+  </section>
 
-    <section id="sobre-nosotros">
-      <h2>Sobre nosotros</h2>
-      <p>
-        Nuestro local conserva un estilo antiguo: muebles de madera, luz cálida y aroma a café recién hecho. Ideal para leer, trabajar en silencio o simplemente disfrutar de un momento de calma.
-      </p>
-    </section>
+  <section id="galeria">
+    <h2>Galería</h2>
+    <p>Próximamente fotos de nuestros productos y espacio.</p>
+  </section>
 
-    <section id="menu">
-      <h2>Menú</h2>
-      <ul>
-        <li><strong>Cafés:</strong> espresso, cortado, café con leche, capuchino.</li>
-        <li><strong>Medialunas:</strong> frescas y mantecosas.</li>
-        <li><strong>Tostados:</strong> jamón y queso, queso solo, mixtos.</li>
-        <li><strong>Picadas:</strong> quesos, fiambres y pan casero.</li>
-      </ul>
-    </section>
+  <section id="info">
+    <h2>Ubicación</h2>
+    <p>Nos encontrás en Buenos Aires, Argentina.</p>
+  </section>
 
-    <section id="galeria">
-      <h2>Galería</h2>
-      <div class="gallery">
-        <img src="IMG1" alt="Exterior del café Rincón Incas">
-        <img src="IMG2" alt="Interior del café Rincón Incas">
-        <img src="IMG3" alt="Café y tostados del local">
-      </div>
-    </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Teléfono: +54 11 1234 5678</p>
+    <p>Email: contacto@rinconincas.com</p>
+  </section>
 
-    <section id="info">
-      <h2>Ubicación y horarios</h2>
-      <p><strong>Dirección:</strong> Av. de los Incas 4399, Buenos Aires.</p>
-      <p><strong>Horarios:</strong> Lunes a Sábado: 9:00 AM – 8:00 PM</p>
-      <p>Domingos cerrado.</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p><strong>Teléfono:</strong> 555-123-456</p>
-      <p><strong>Email:</strong> rinconincas@cafe.com</p>
-    </section>
-  </main>
+  <section id="qr">
+    <h2>Acceso rápido al menú</h2>
+    <p>Escaneá este código QR para ir directo al menú:</p>
+    <img src="qr-menu.png" alt="Código QR al menú">
+  </section>
 
   <footer>
-    © 2026 Rincón Incas — Tradición y sabor en cada taza.
+    © 2026 Rincón Incas
   </footer>
 </body>
 </html>
